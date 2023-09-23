@@ -318,7 +318,7 @@ def main():
     serve_parser.add_argument("port", type=int, help="Port to connect to")
 
     run_parser = subparsers.add_parser("run", help="Run your bot against an opponent")
-    run_parser.add_argument(
+    run_parser.add_argument (
         "opponent",
         choices=list(map(lambda opponent: opponent.value, list(RunOpponent))),
         help="Opponent to put your bot against, where self is your own bot or computer is against a simple computer bot",
