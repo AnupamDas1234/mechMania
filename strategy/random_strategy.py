@@ -7,10 +7,10 @@ from game.character.action.move_action import MoveAction
 from game.character.character_class_type import CharacterClassType
 from game.game_state import GameState
 from game.util.position import Position
-from strategy.strategy import Strategy
+from strategy.strategy import OurHumanStrategy
 
 
-class RandomStrategy(Strategy):
+class RandomStrategy(OurHumanStrategy):
     def decide_character_classes(
         self,
         possible_classes: list[CharacterClassType],
